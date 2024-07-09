@@ -1,3 +1,4 @@
+# lib/person.py
 APPROVED_JOBS = [
     "Admin",
     "Customer Service",
@@ -44,12 +45,12 @@ class Person:
 
 
 if __name__ == "__main__":
-    person = Person("Guido", "Sales")
-    print(person.name)  
-    print(person.job)  
+    person = Person("john doe", "ITC")
+    print(person.name)  # John Doe
+    print(person.job)   # ITC
 
-    person.name = ""
-    person.job = "Astronaut"  
+    person.name = ""  # Name must be string between 1 and 25 characters.
+    person.job = "Astronaut"  # Job must be in list of approved jobs.
 
-    print(person.name)
-    print(person.job)  
+    print(person.name)  # None
+    print(person.job)   # None
